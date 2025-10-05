@@ -1,0 +1,5 @@
+.header-image {
+  width: 100%;        /* ocupa todo el ancho */
+  height: auto;       /* mantiene proporción */
+  display: block;     /* elimina espacio extra abajo */
+}
