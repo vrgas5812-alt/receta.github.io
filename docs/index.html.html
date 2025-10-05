@@ -1,20 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <TITLe>CHANCHITO FELIZ</TITLe>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pasta a la Boloñesa — Receta</title>
+  <meta name="description" content="Receta fácil de pasta a la boloñesa — ingredientes, pasos y consejos." />
+
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Recipe structured data (JSON-LD) - edit values below if needed -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Pasta a la boloñesa",
+    "author": { "@type": "Person", "name": "Tu Nombre" },
+    "cookTime": "PT50M",
+    "recipeYield": "4 porciones",
+    "recipeIngredient": [
+      "400 g de pasta (espagueti, fettuccine o la que prefieras)",
+      "2 cucharadas de aceite de oliva",
+      "1 cebolla mediana, picada",
+      "2 dientes de ajo, picados",
+      "1 zanahoria pequeña, rallada",
+      "500 g de carne molida de res (o mezcla res/cerdo)",
+      "150 ml de vino tinto (opcional)",
+      "800 g de tomates triturados (o 4 tomates grandes pelados y picados)",
+      "2 cucharadas de pasta de tomate",
+      "1 hoja de laurel",
+      "Sal y pimienta al gusto",
+      "Albahaca o perejil fresco al gusto",
+      "Queso parmesano rallado para servir"
+    ],
+    "recipeInstructions": [
+      "Calienta el aceite en una sartén grande a fuego medio. Sofríe la cebolla hasta que esté translúcida, añade el ajo y la zanahoria y cocina 2–3 minutos más.",
+      "Agrega la carne molida y cocina hasta que esté bien dorada, rompiendo los grumos con una cuchara.",
+      "Si usas vino, añade el vino tinto y deja reducir 2–3 minutos hasta que se evapore el alcohol.",
+      "Incorpora los tomates triturados, la pasta de tomate y la hoja de laurel. Salpimienta al gusto.",
+      "Reduce el fuego y deja cocinar a fuego lento 20–30 minutos, removiendo ocasionalmente. Ajusta sazón y añade hierbas frescas al final.",
+      "Mientras tanto, cocina la pasta en abundante agua con sal siguiendo las instrucciones del paquete hasta que esté al dente.",
+      "Escurre la pasta reservando un poco del agua de cocción. Mezcla la pasta con la salsa boloñesa (si está muy seca, añade un poco del agua de cocción).",
+      "Sirve caliente con queso parmesano rallado y hojas de albahaca o perejil por encima."
+    ]
+  }
+  </script>
 </head>
 <body>
-   <H1> <span style="color: brown">BUSQUEDA DE LA FELICIDAD CON CARLITOS</H1> 
-   <h2>Mi segundo heading</h2> 
-   <h3>Mi tercer heading</h3> 
-   <h4>Mi cuarto heading</h4> 
-<h5>Mi quinto heading</h5> 
-<h6>Mi sexto heading</h6> 
-<p>Chanchito feliz está muy feliz</p> 
-<img src="Chanchito.jpg.png" width="300">
-<p>POR LA VIDA DE EL ES MUY FELIZ,LE ENCANTA COMPARTIR CON LOS QUE AMA</p>
-<hr>
-<h1> Chanchito Carlitos</h4>
-<p> C Debe ser por que <span style="color: brown"> Tiene mucho amigos y es muy importante </span></style> <br> <br> <span style="color: brown"> tener amigos <span></P>
-    <img src="2.jpeg" width="500">
-    <p><span style="color: mediumvioletred ">JUGAR CON ELLOS EN EL PARQUE</p>
+  <main class="container">
+    <article class="recipe">
+      <header class="recipe-header">
+        <h1 id="recipe-title">Pasta a la boloñesa</h1>
+        <div class="meta">
+          <div class="meta-item"><strong>Tiempo:</strong> <span id="recipe-time">50 minutos</span></div>
+          <div class="meta-item"><strong>Porciones:</strong> <span id="recipe-yield">4</span></div>
+        </div>
+      </header>
+
+      <section class="recipe-grid">
+        <!-- Left: image + description + ingredients -->
+        <div class="main-column">
+          <figure class="recipe-figure">
+            <!-- Replace src with your image file path -->
+            <img src="assets/pasta-bolognese.jpg" alt="Plato de pasta a la boloñesa" id="recipe-image" />
+            <figcaption>Clásica pasta a la boloñesa — lista para servir.</figcaption>
+          </figure>
+
+          <section class="description">
+            <p id="recipe-description">
+              Salsa boloñesa casera, llena de sabor y perfecta para acompañar tu pasta favorita.
+              Receta fácil y equilibrada, ideal para una comida familiar.
+            </p>
+          </section>
+
+          <section class="ingredients" aria-labelledby="ingredients-title">
+            <h2 id="ingredients-title">Ingredientes</h2>
+            <button id="toggle-check" type="button">Marcar / Desmarcar</button>
+            <ul id="ingredients-list">
+              <li><input type="checkbox" /> 400 g de pasta (espagueti, fettuccine o la que prefieras)</li>
+              <li><input type="checkbox" /> 2 cucharadas de aceite de oliva</li>
+              <li><input type="checkbox" /> 1 cebolla mediana, picada</li>
+              <li><input type="checkbox" /> 2 dientes de ajo, picados</li>
+              <li><input type="checkbox" /> 1 zanahoria pequeña, rallada</li>
+              <li><input type="checkbox" /> 500 g de carne molida de res</li>
+              <li><input type="checkbox" /> 150 ml de vino tinto (opcional)</li>
+              <li><input type="checkbox" /> 800 g de tomates triturados (o 4 tomates grandes pelados y picados)</li>
+              <li><input type="checkbox" /> 2 cucharadas de pasta de tomate</li>
+              <li><input type="checkbox" /> 1 hoja de laurel</li>
+              <li><input type="checkbox" /> Sal y pimienta al gusto</li>
+              <li><input type="checkbox" /> Albahaca o perejil fresco al gusto</li>
+              <li><input type="checkbox" /> Queso parmesano rallado para servir</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Right: preparation steps + actions -->
+        <aside class="sidebar">
+          <div class="actions">
+            <button id="print-btn" type="button">Imprimir receta</button>
+            <button id="copy-link-btn" type="button">Copiar enlace</button>
+          </div>
+
+          <section class="preparation" aria-labelledby="prep-title">
+            <h2 id="prep-title">Preparación</h2>
+            <ol id="prep-steps">
+              <li>Calienta el aceite en una sartén grande a fuego medio. Sofríe la cebolla hasta que esté translúcida; añade el ajo y la zanahoria y cocina 2–3 minutos más.</li>
+              <li>Añade la carne molida y cocina hasta que esté bien dorada, removiendo para deshacer los grumos.</li>
+              <li>Si usas vino, incorpora el vino tinto y deja reducir 2–3 minutos para evaporar el alcohol.</li>
+              <li>Agrega los tomates triturados, la pasta de tomate y la hoja de laurel. Salpimienta al gusto.</li>
+              <li>Reduce el fuego y cocina a fuego lento 20–30 minutos, removiendo de vez en cuando. Ajusta la sazón y añade hierbas frescas al final.</li>
+              <li>Mientras tanto, cuece la pasta en abundante agua con sal hasta que esté al dente siguiendo las instrucciones del paquete.</li>
+              <li>Escurre la pasta dejando un poco del agua de cocción. Mezcla la pasta con la salsa boloñesa; si queda muy seca, añade un chorrito del agua de cocción.</li>
+              <li>Sírvela caliente y espolvorea queso parmesano rallado y hojas de albahaca o perejil fresco.</li>
+            </ol>
+          </section>
+
+          <section class="notes">
+            <h3>Notas</h3>
+            <p>Consejo: la salsa mejora si se cocina a fuego muy bajo durante más tiempo. Puedes conservarla en un recipiente hermético en el refrigerador hasta 3 días o congelarla.</p>
+          </section>
+        </aside>
+      </section>
+
+      <footer class="recipe-footer">
+        <p>Plantilla de receta creada para uso personal. Edita los textos y la imagen según necesites.</p>
+      </footer>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
